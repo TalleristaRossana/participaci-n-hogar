@@ -1,0 +1,24 @@
+extends  base.pug
+
+block content
+  script
+      include script.js
+  h2 Labores del hogar por genero
+  p Selecciona segun conideres, se honesto con tus respuestas
+  form(action="/resultado")
+    p Lavar los trastes
+    input(type="radio", id="mujer1", name="mujer1")
+    input(type="radio", id="hombre1", name="hombre1")
+    p Limpieza la casa
+    input(type="radio", id="mujer2", name="mujer2")
+    input(type="radio", id="hombre2", name="hombre2")
+    p Cocinar
+    input(type="radio", id="mujer3", name="mujer3")
+    input(type="radio", id="hombre3", name="hombre3")
+    p Planchar
+    input(type="radio", id="mujer4", name="mujer4")
+    input(type="radio", id="hombre4", name="hombre4")
+    p Ir al super
+    input(type="radio", id="mujer5", name="mujer5")
+    input(type="radio", id="hombre5", name="hombre5")
+    input(type="submit", name="Done" onclik="return calculate()")
