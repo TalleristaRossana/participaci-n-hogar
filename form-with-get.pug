@@ -7,18 +7,18 @@ block content
   p Selecciona segun conideres, se honesto con tus respuestas
   form(action="/resultado")
     p Lavar los trastes
-    input(type="radio", id="mujer1", name="mujer1")
-    input(type="radio", id="hombre1", name="hombre1")
+    input(type="radio", id="mujer1", name="mujer1" value="1" onclick="calculate()")
+    input(type="radio", id="hombre1", name="hombre1"  value="1" onclick="calculate()")
     p Limpieza la casa
-    input(type="radio", id="mujer2", name="mujer2")
-    input(type="radio", id="hombre2", name="hombre2")
+    input(type="radio", id="mujer2", name="mujer2"  value="1" onclick="calculate()")
+    input(type="radio", id="hombre2", name="hombre2"  value="1" onclick="calculate()")
     p Cocinar
-    input(type="radio", id="mujer3", name="mujer3")
-    input(type="radio", id="hombre3", name="hombre3")
+    input(type="radio", id="mujer3", name="mujer3"  value="1" onclick="calculate()")
+    input(type="radio", id="hombre3", name="hombre3"  value="1" onclick="calculate()")
     p Planchar
-    input(type="radio", id="mujer4", name="mujer4")
-    input(type="radio", id="hombre4", name="hombre4")
+    input(type="radio", id="mujer4", name="mujer4"  value="1" onclick="calculate()")
+    input(type="radio", id="hombre4", name="hombre4"  value="1" onclick="calculate()")
     p Ir al super
-    input(type="radio", id="mujer5", name="mujer5")
-    input(type="radio", id="hombre5", name="hombre5")
-    input(type="submit", name="Done" onclik="return calculate()")
+    input(type="radio", id="mujer5", name="mujer5"  value="1" onclick="calculate()")
+    input(type="radio", id="hombre5", name="hombre5"  value="1" onclick="calculate()")
+    input(type="submit", name="enviar")
